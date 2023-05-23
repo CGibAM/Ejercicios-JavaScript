@@ -40,8 +40,9 @@ console.log(recipiente);
     -NaN: Not a number, sirve para representar un valor que no es un numero. Lo obtenemos al hacer una operación con una variable que no es un numero, 
     o con una operacion que no es posible.
 
-    -Symbol
-    -Object(no primitivo)
+    -Symbol:
+
+    -Object(no primitivo):
 
 */
 

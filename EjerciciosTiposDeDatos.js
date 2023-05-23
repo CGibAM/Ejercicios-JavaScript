@@ -42,3 +42,24 @@ numeroDePayasos = 27;
 pesoPaquete = ((pesoDePayasos * numeroDePayasos) + (pesoDeMuñecas * numeroDeMuñecas));
 
 console.log("El peso total del paquete es: " + pesoPaquete + " gramos");
+
+
+//Ejercicio Muñecas y payasos v2
+
+console.log("");
+console.log("Aqui inicia el ejercicio Jugueteria V2");
+
+function funcionPeso () {
+
+    var pesoDePayasos = 112;
+    var pesoDeMuñecas = 75;
+    var numeroMuñecas = prompt("¿Cuantas muñecas desea comprar?");
+    var numeroPayasos = prompt("¿Cuantos payasos desea comprar?");
+    pesoPaquete = ((pesoDePayasos * numeroPayasos) + (pesoDeMuñecas * numeroMuñecas));
+
+    alert("El peso total del paquete es: " + pesoPaquete + " gramos");
+    console.log("El peso total del paquete es: " + pesoPaquete + " gramos");
+
+}
+
+funcionPeso();
