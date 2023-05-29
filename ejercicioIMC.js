@@ -29,7 +29,6 @@ function IMCfun(estaturaCm, pesoLibras){
         console.log("");
     }
 
-
 }
 
 IMCfun(estaturaCm, pesoLibras);

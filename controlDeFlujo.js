@@ -29,7 +29,7 @@ Estructura basica de un if
 
 
 if (condicion){
-    //Ejecuto este bloque de codigo
+    //Ejecuto este bloque de codigo
 }
 
 
@@ -42,9 +42,9 @@ if (condicion){
 let edadDeFelipe = 17;
 let edadPermitida = 18;
 
-if(edadDeFelipe > edadPermitida){
+if (edadDeFelipe > edadPermitida) {
     console.log("Felipe puede ir a la fiesta");
-} else{
+} else {
     console.log("Felipe no puede ir a la fiesta");
 }
 
@@ -73,9 +73,9 @@ else
 let edad = false;
 let edadParaFiesta = 18;
 
-if (edad < edadParaFiesta){
+if (edad < edadParaFiesta) {
     console.log("Lo siento, no puedes entrar a la fiesta");
-} else{
+} else {
     console.log("Felicidades, tienes la edad para ingresar a la fiesta!");
 }
 
@@ -101,24 +101,190 @@ if (condicion 1) {
 
 */
 
-// edadDeDaivd = 19;
-// edadPermitida = 18;
-// dineroDavid = 20;
-// coverAntro =150;
+edadDeDaivd = 19;
+edadPermitida = 18;
+dineroDavid = 20;
+coverAntro = 150;
 
-// if (edadDeDaivd >= edadPermitida && dineroDavid >= coverAntro){
-//     console.log("Muy bien, puedes entrar al antro");
-// } else if(edadDeDaivd >= edadPermitida && dineroDavid < coverAntro){
-//     console.log("No tienes suficiente dinero para ir al antro");
-// } else {
-//     console.log("No tienes edad para ir al antro");
-// }
+if (edadDeDaivd >= edadPermitida && dineroDavid >= coverAntro) {
+    console.log("Muy bien, puedes entrar al antro");
+} else if (edadDeDaivd >= edadPermitida && dineroDavid < coverAntro) {
+    console.log("No tienes suficiente dinero para ir al antro");
+} else {
+    console.log("No tienes edad para ir al antro");
+}
 
 let hora = prompt("ingrese la hora actual");
-if (hora< 12){
+if (hora < 12) {
     console.log("Buenos días");
-} else if (hora <= 19){
+} else if (hora <= 19) {
     console.log("Buenas tardes, como pasa el tiempo");
-} else{
+} else {
     console.log("buenas noches, a mimir");
+}
+
+/*Switch
+
+Esta condicional nos permite hacer multiples operaciones y tomar decisiones en funcion de distintos estados de las variables. 
+Evalua una expresion comparando el valor de un dato o variable, y ejecutando la instruccion asociada a ese caso.
+
+
+ - case: Evalua el caso o condicion asociado que dispara un bloque de codigo
+ - break: Termina el proceso sin que tengamos que pasar por todas las iteraciones o casos.
+ - default: Termina el proceso en caso de que ninguna de las evaluaciones sea la correcta (similar al else)
+
+
+
+switch (expresion o condicion){
+    case valor1:
+        //Codigo que se ejecuta si la condicion es igual a valor1
+    break;
+
+    case valor2:
+        //Codigo que se ejecuta si la condicion es igual a valor2
+    break;
+
+    case valor3:
+        //Codigo que se ejecuta si la condicion es igual a valor3
+    break;
+
+    case valor4:
+        //Codigo que se ejecuta si la condicion es igual a valor4
+    break;
+
+    case valor5:
+        //Codigo que se ejecuta si la condicion es igual a valor5
+    break;
+
+    default:
+        //Ingresaste un piso incorrecto (un bloque de codigo que se ejecuta si no se cumple con ninguna de las condiciones anteriores)
+}
+
+*/
+
+// let pisoDestino = prompt("Ingrese al piso al que quieras ir (1 al 5)");
+
+switch (pisoDestino) {
+    case "1":
+        //Debe ser el mismo tipo de dato
+        console.log("Vamos al piso 1 (musica de elevador de fondo)");
+        break;
+
+    case "2":
+        console.log("Vamos al piso 2 (musica de elevador de fondo)");
+        break;
+
+    case "3":
+        console.log("Vamos al piso 3 (musica de elevador de fondo)");
+        break;
+
+    case "4":
+        console.log("Vamos al piso 4 (musica de elevador de fondo)");
+        break;
+
+    case "5":
+        console.log("Vamos al piso 5 (musica de elevador de fondo)");
+        break;
+
+    default:
+        console.log("Seleccione un piso valido");
+        break;
+}
+
+//Ejercicio Eevee
+
+var elementoEvolucion = prompt("Ingrese el elemento con el que evolucionaras a tu pokemon");
+var pokeonFeliz = prompt("Tu pokemon esFeliz?");
+
+switch (elementoEvolucion && pokeonFeliz) {
+    case "piedraFuego":
+        console.log("Tu Eevee evoluciono a Flaereon");
+        break;
+
+    case "piedraTrueno":
+        console.log("Tu Eevee evoluciono a Jolteon");
+        break;
+
+    case "piedraAgua":
+        console.log("Tu Eevee evoluciono a Vaporeon");
+        break;
+
+    case "esDeMañana" && "Si":
+        console.log("Tu Eevee evoluciono a Espeon");
+        break;
+
+}
+
+//Ejercicio de signo Zodiacal
+
+var mesNacimiento = prompt("Ingresa tu mes de nacimiento");
+var diaNacimiento = prompt("Ingresa tu día de nacimiento");
+
+var dia = parseInt(diaNacimiento, 10);
+
+
+switch (true) {
+    case mesNacimiento === "Marzo" && (dia >= 21):
+    case mesNacimiento === "Abril" && (dia <= 19):
+        console.log("Aries. Grandes determinaciones deberás tomar en el día de hoy. Aun poniendo todo de tu parte quedarás con una gran sensación de vacío.");
+        break;
+
+    case mesNacimiento === "Abril" && (dia >= 20):
+    case mesNacimiento === "Mayo" && (dia <= 20):
+        console.log("Tauro. Vivirás un problema tras otro durante la jornada de hoy. No permitas que la sucesión de eventos negativos afecte tu humor");
+        break;
+
+    case mesNacimiento === "Mayo" && (dia >= 21):
+    case mesNacimiento === "Junio" && (dia <= 20):
+        console.log("Geminis. Te verás en la necesidad de poner algunos puntos sobre la mesa con amigos cercanos. Que no pase a mayores.");
+        break;
+
+    case mesNacimiento === "Junio" && (dia >= 21):
+    case mesNacimiento === "Julio" && (dia <= 22):
+        console.log("Cáncer. Por más que intentes negarlo, tu corazón te dará el camino correcto a seguir en la situación que estás viviendo. Escúchalo.");
+        break;
+
+    case mesNacimiento === "Julio" && (dia >= 23):
+    case mesNacimiento === "Agosto" && (dia <= 22):
+        console.log("Leo. Ciertos recuerdos volverán a golpear tu puerta en la jornada de hoy. Busca estar en compañía de seres queridos.");
+        break;
+
+    case mesNacimiento === "Agosto" && (dia >= 23):
+    case mesNacimiento === "Septiembre" && (dia <= 22):
+        console.log("Virgo. Jornada propicia para iniciar todo tipo de cambios en lo que a lo profesional se refiere. Procura sacarle todo el provecho posible.");
+        break;
+
+    case mesNacimiento === "Septiembre" && (dia >= 23):
+    case mesNacimiento === "Octubre" && (dia <= 22):
+        console.log("Libra. Ciertas cuestiones no resueltas de días anteriores volverán para atormentarte durante la jornada de hoy. Busca darles punto final.");
+        break;
+
+    case mesNacimiento === "Octubre" && (dia >= 23):
+    case mesNacimiento === "Noviembre" && (dia <= 21):
+        console.log("Escorpio. Tendrás una jornada de múltiples quehaceres domésticos, que consumirán gran parte de tu tiempo libre. No postergues obligaciones.");
+        break;
+
+    case mesNacimiento === "Noviembre" && (dia >= 22):
+    case mesNacimiento === "Diciembre" && dia <= 21:
+        console.log("Sagitario. Grandes sorpresas te esperan para el día de hoy. Atravesarás una verdadera montaña rusa de emociones en la jornada.");
+        break;
+
+    case mesNacimiento === "Diciembre" && (dia >= 22):
+    case mesNacimiento === "Enero" && (dia <= 19):
+        console.log("Capricornio. Lograrás tomar la determinación de dejar hábitos que sabes son nocivos para tu salud. No decaigas con el primer escollo");
+        break;
+
+    case mesNacimiento === "Enero" && (dia >= 20):
+    case mesNacimiento === "Febrero" && (dia <= 18):
+        console.log("Piscis. Un pequeño accidente casero hará que tu día se vea complicado hasta en las tareas cotidianas más sencillas. No te alteres.");
+        break;
+
+    case mesNacimiento === "Febrero" && (dia >= 19):
+    case mesNacimiento === "Marzo" && (dia <= 20):
+        console.log("Acuario. No podrás esperar tener razón en cada opinión que des. Deja tu orgullo de lado y acepta los errores que te serán marcados.");
+        break;
+
+    default:
+        console.log("Ingresó un dato invalido o en un formato no valido (Ejemplo. Enero 12)");
+        break;
 }
