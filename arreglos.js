@@ -103,3 +103,26 @@ console.log(listaBalanceada.indexOf("Tacos"));
 console.log(listaBalanceada.join(". "));
 
 // Tarea reverse, sort, toString, splice
+
+//Reverse
+console.log(listaBalanceada.reverse());
+
+//Sort (ordenar) by Unicode
+console.log(listaBalanceada.sort());
+
+//Sort num
+console.log(listaBalanceada.sort(function(a,b) {return a-b}));
+
+//Sort alfabeticamente
+console.log(listaBalanceada.sort(function(a,b) {return a.localeCompare(b)}));
+
+//toString (Para Objects)
+
+arrayNum = [2,3,4,5];
+
+console.log(arrayNum.toString());
+
+//Splice
+arrayNum.splice(2, 0, 33)
+
+console.log(arrayNum);

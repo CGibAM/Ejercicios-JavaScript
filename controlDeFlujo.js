@@ -194,9 +194,8 @@ switch (pisoDestino) {
 //Ejercicio Eevee
 
 var elementoEvolucion = prompt("Ingrese el elemento con el que evolucionaras a tu pokemon");
-var pokeonFeliz = prompt("Tu pokemon esFeliz?");
 
-switch (elementoEvolucion && pokeonFeliz) {
+switch (elementoEvolucion) {
     case "piedraFuego":
         console.log("Tu Eevee evoluciono a Flaereon");
         break;
@@ -209,10 +208,29 @@ switch (elementoEvolucion && pokeonFeliz) {
         console.log("Tu Eevee evoluciono a Vaporeon");
         break;
 
-    case "esDeMañana" && "Si":
+    case "esDeMañana":
         console.log("Tu Eevee evoluciono a Espeon");
         break;
 
+    case "esDeNoche":
+        console.log("Tu Eevee evoluciono a Umbreon");
+        break;
+
+    case "rocaMusgo":
+        console.log("Tu Eevee evoluciono a Leafeon");
+        break;
+
+    case "rocaHielo":
+        console.log("Tu Eevee evoluciono a Glaceon");
+        break;
+
+    case "conoceMovimientoHada":
+        console.log("Tu Eevee evoluciono a Sylveon");
+        break;
+    
+    default:
+        console.log("Se mantiene tu Eevee, todo bonito.");
+        break;
 }
 
 //Ejercicio de signo Zodiacal
