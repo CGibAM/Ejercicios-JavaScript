@@ -107,7 +107,7 @@ boton.addEventListener("click", /*cambioColor*/
 //Crear elementos con createElement
 const div = document.createElement("div");
 
-//Oara insertarlo appendChild
+//Para insertarlo appendChild
 
 document.body.appendChild(div);
 
