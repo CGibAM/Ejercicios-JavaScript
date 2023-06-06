@@ -1,0 +1,39 @@
+.text-center {
+    text-align: center;
+}
+
+.border {
+    border: 0;
+}
+
+.main {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    border: 1px solid rgb(68, 7, 7);
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.main-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.color-dark-mode {
+    background-color: #121212;
+    color: #6fc8d3;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 600px;
+    height: 500px;
+  }
